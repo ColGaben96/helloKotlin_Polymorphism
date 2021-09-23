@@ -1,6 +1,7 @@
 package com.gabensoft.controller
 
 import com.gabensoft.model.VehicleContainer
+import com.gabensoft.model.utils.FuelType
 import java.util.*
 
 class Controller {
@@ -35,8 +36,12 @@ class Controller {
             6       Eliminar
         """.trimIndent())
     }
+
+    fun create() {
+        model.createBicycle(3, "NO", 1, 0, FuelType.Manual)
+    }
 }
 
 fun main() {
-    Controller().console()
+    Controller().create()
 }
