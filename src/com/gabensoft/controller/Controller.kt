@@ -24,7 +24,16 @@ class Controller {
     }
 
     fun help() {
-
+        println("""
+            Opción  Descripcion
+            0       Salir
+            1       Muestra esta ayuda
+            2       Crear una persona
+            3       Buscar x nombre
+            4       Buscar x apellido
+            5       Actualizar
+            6       Eliminar
+        """.trimIndent())
     }
 }
 
